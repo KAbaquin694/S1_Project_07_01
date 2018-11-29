@@ -23,6 +23,8 @@
 
 /* Flex Layout Styles */
 
+/* The 'Flex Layout Styles' section allows the content within the used elements to align themselves on the main &/or cross axes as well as being able to wrap around other content. */
+
 body {
     display: -webkit-flex;
     display: flex;
@@ -45,6 +47,8 @@ article {
    ============================================
 */
 
+/* This block of code is specifically devices with a maximum width of 480 pixels, typically mobile devices. This makes that img elements with the class 'panel' have a width of 100% & makes the navigation bar appear at the bottom. */
+
 @media only screen and (max-width: 480px) {
     img.panel {
         width: 100%;
@@ -59,12 +63,30 @@ article {
         -webkit-order: 100;
         order: 100;
     }
+
+    /* img.size1 {
+        width: 100%;
+    }
+
+    img.size2 {
+        width: 60%;
+    }
+
+    img.size3 {
+        width: 40%;
+    }
+
+    img.size4 {
+        width: 30%;
+    } */
 }
 
 /* ===================================================
 	Tablet and Desktop Devices: Greater than 480 pixels
    ===================================================
 */
+
+/* This block of code only applies to devices with a width more than 481 pixels, anything larger than a moblie device. It determines whether or not the elements would wrap around other elements. It also sizes the img elements differently based on what class they are given.  */
 
 @media only screen and (min-width: 481px) {
     nav.horizontal ul {
@@ -78,5 +100,21 @@ article {
     nav.horizontal ul li {
         -webkit-flex: 1 1 auto;
         flex: 1 1 auto;
+    }
+
+    img.size1 {
+        width: 100%;
+    }
+
+    img.size2 {
+        width: 60%;
+    }
+
+    img.size3 {
+        width: 40%;
+    }
+
+    img.size4 {
+        width: 30%;
     }
 }

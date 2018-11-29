@@ -18,10 +18,35 @@
 
 /* Hidden Objects */
 
+/* The 'Hidden Objects' section allows the selected elements to not display when it will be printed. */
 
-
-
-
-
+nav,
+footer,
+article {
+    display: none;
+}
 
 /* Comic Book Sheet Styles */
+
+/* This section would give the img element various widths depending on their class. */
+
+section#sheet {
+    width: 6in;
+    margin: 0in auto 0in auto;
+}
+
+img.size1 {
+    width: 5in;
+}
+
+img.size2 {
+    width: 3in;
+}
+
+img.size3 {
+    width: 2in;
+}
+
+img.size4 {
+    width: 1.5in;
+}
